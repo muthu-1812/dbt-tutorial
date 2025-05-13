@@ -1,0 +1,51 @@
+[0m13:45:19.308813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc110c42900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc112650500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc110af4bf0>]}
+
+
+============================== 13:45:19.312664 | 455a104b-ef7f-48e5-aa99-a9d80e56b383 ==============================
+[0m13:45:19.312664 [info ] [MainThread]: Running with dbt=1.9.4
+[0m13:45:19.313362 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/muthu/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init jaffle_shop', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:45:19.324690 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/home/muthu/.dbt')}
+[0m13:45:19.325241 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:45:19.326678 [debug] [MainThread]: Starter project path: /home/muthu/Desktop/workspace/dbt-tutorial/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m13:45:19.329738 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:45:19.330419 [info ] [MainThread]: Setting up your profile.
+[0m13:45:25.276189 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:45:25.276805 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:45:25.286767 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:49:04.161974 [info ] [MainThread]: Profile jaffle_shop written to /home/muthu/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:49:04.164104 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 224.91826, "process_in_blocks": "0", "process_kernel_time": 0.257894, "process_mem_max_rss": "221704", "process_out_blocks": "88", "process_user_time": 5.457474}
+[0m13:49:04.165756 [debug] [MainThread]: Command `dbt init` succeeded at 13:49:04.165469 after 224.92 seconds
+[0m13:49:04.166655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc110b5e420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0c87db2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0c3e07770>]}
+[0m13:49:04.167856 [debug] [MainThread]: Flushing usage events
+[0m13:49:06.023246 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:19.695365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70341d1e9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70341d702ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70341d4662a0>]}
+
+
+============================== 13:51:19.699279 | 9853e78c-f790-4245-a911-b098b27f6db5 ==============================
+[0m13:51:19.699279 [info ] [MainThread]: Running with dbt=1.9.4
+[0m13:51:19.700209 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/muthu/Desktop/workspace/dbt-tutorial', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:19.700998 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/muthu/Desktop/workspace/dbt-tutorial/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:51:19.702414 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07166779, "process_in_blocks": "0", "process_kernel_time": 0.124725, "process_mem_max_rss": "93728", "process_out_blocks": "24", "process_user_time": 1.570543}
+[0m13:51:19.703059 [debug] [MainThread]: Command `dbt run` failed at 13:51:19.702914 after 0.07 seconds
+[0m13:51:19.704106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70341d1e9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7034216d7e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70341d417f20>]}
+[0m13:51:19.704626 [debug] [MainThread]: Flushing usage events
+[0m13:51:21.668946 [debug] [MainThread]: An error was encountered while trying to flush usage events
